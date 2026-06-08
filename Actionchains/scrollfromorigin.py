@@ -7,8 +7,6 @@ driver.get("https://automationexercise.com")
 
 origin = ScrollOrigin.from_viewport(0, 0)
 
-ActionChains(driver)\
-    .scroll_from_origin(origin, 0, 1000)\
-    .perform()
+ActionChains(driver).scroll_from_origin(origin, 0, 1000).perform()
 
 driver.quit()
