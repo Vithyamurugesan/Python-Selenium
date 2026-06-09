@@ -5,28 +5,24 @@ def log_creator():
     logger = logging.getLogger("AutomationLogger")
     logger.setLevel(logging.INFO)
 
-    # Prevent duplicate handlers when called multiple times
     if logger.handlers:
         logger.handlers.clear()
 
-        # File Handler
-        file_handler = logging.FileHandler("testlogreport.log")
-        file_handler.setLevel(logging.INFO)
+    file_handler = logging.FileHandler("testlogreport.log")
+    file_handler.setLevel(logging.INFO)
 
-        # Console Handler
-        console_handler = logging.StreamHandler()
-        console_handler.setLevel(logging.INFO)
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
 
-        # Common Formatter
-        formatter = logging.Formatter(
-            "%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S"
-        )
+    formatter = logging.Formatter(
+        "%(asctime)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
 
-        file_handler.setFormatter(formatter)
-        console_handler.setFormatter(formatter)
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
 
-        logger.addHandler(file_handler)
-        logger.addHandler(console_handler)
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
 
     return logger
