@@ -16,7 +16,7 @@ def teardown_function(function):
 def test_valid_product():
     driver.find_element(By.NAME, "search").send_keys("HP")
     driver.find_element(By.XPATH, "//button[contains(@class,'btn-default')]").click()
-    assert driver.find_element(By.LINK_TEXT, "H LP3065").is_displayed()
+    assert driver.find_element(By.LINK_TEXT, "HP LP3065").is_displayed()
 
 
 def test_invalid_product():
