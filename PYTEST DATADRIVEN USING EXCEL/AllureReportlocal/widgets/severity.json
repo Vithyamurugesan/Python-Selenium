@@ -1,0 +1,1 @@
+[{"uid":"e168a472ee15924","name":"test_validlogin[vithyamurugesan-1234]","time":{"start":1780999448367,"stop":1780999468097,"duration":19730},"status":"passed","severity":"normal"},{"uid":"90caec8c75332e46","name":"test_validlogin[vithy-12]","time":{"start":1780999468104,"stop":1780999487490,"duration":19386},"status":"broken","severity":"normal"}]
