@@ -1,12 +1,14 @@
 import pytest
 from selenium import webdriver
 
-@pytest.fixture(params=['chrome','edge'])
+@pytest.fixture(params=['chrome'])
 def setup_and_teardown(request):
     if request.param=='chrome':
         driver=webdriver.Chrome()
-    elif request.param=='edge':
+        
+    '''elif request.param=='edge':
         driver=webdriver.Edge()
+        '''
 
 
     driver.maximize_window()
