@@ -9,10 +9,7 @@ from Utilities import excelReader
 from Utilities import logCreator
 
 
-@pytest.mark.parametrize(
-    "email,password",
-    excelReader.get_data("ExcelFiles/loginData.xlsx", "login")
-)
+@pytest.mark.parametrize( "email,password",excelReader.get_data("ExcelFiles/loginData.xlsx", "login"))
 class TestTutorialsNinjaLogin:
 
     log = logCreator.log_generator()
@@ -27,34 +24,19 @@ class TestTutorialsNinjaLogin:
         try:
             driver.get("https://tutorialsninja.com/demo/index.php?route=account/login")
             self.log.info("Opened TutorialsNinja login page")
-
             wait.until(EC.visibility_of_element_located((By.NAME, "email"))).send_keys(email)
-
             wait.until(EC.visibility_of_element_located((By.NAME, "password"))).send_keys(password)
-
             wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[type='submit']"))).click()
-
             try:
-                warning = wait.until(
-                    EC.visibility_of_element_located(
-                        (By.CSS_SELECTOR, ".alert-danger")
-                    )
-                )
+                warning = wait.until( EC.visibility_of_element_located((By.CSS_SELECTOR, ".alert-danger")))
                 text = warning.text
-
                 assert "Warning: No match for E-Mail Address and/or Password." in text
                 self.log.info("Invalid login verified")
                 return
-
             except TimeoutException:
                 pass
-
-            my_account = wait.until(
-                EC.visibility_of_element_located((By.LINK_TEXT, "My Account"))
-            )
-
+            my_account = wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "My Account")))
             assert my_account.is_displayed()
             self.log.info("Login successful")
-
         finally:
             driver.quit()
