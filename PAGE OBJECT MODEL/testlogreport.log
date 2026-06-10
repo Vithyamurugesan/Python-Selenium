@@ -1,0 +1,37 @@
+2026-06-10 13:09:09 - INFO - ******** Login Test Started ********
+2026-06-10 13:09:09 - INFO - Opening Login Page
+2026-06-10 13:10:44 - INFO - ******** Login Test Started ********
+2026-06-10 13:10:44 - INFO - Opening Login Page
+2026-06-10 13:10:45 - INFO - Entered Email
+2026-06-10 13:10:45 - INFO - Entered Password
+2026-06-10 13:10:46 - INFO - Clicked Login Button
+2026-06-10 13:10:46 - INFO - Login Passed
+2026-06-10 13:10:46 - INFO - ******** Login Test Finished ********
+2026-06-10 13:14:24 - INFO - ******** Login Test Started ********
+2026-06-10 13:14:24 - INFO - Opening Login Page
+2026-06-10 13:14:24 - INFO - Entered Email
+2026-06-10 13:14:24 - INFO - Entered Password
+2026-06-10 13:14:24 - INFO - Clicked Login Button
+2026-06-10 13:14:26 - INFO - Login Passed
+2026-06-10 13:14:26 - INFO - ******** Login Test Finished ********
+2026-06-10 13:15:37 - INFO - ******** Login Test Started ********
+2026-06-10 13:15:37 - INFO - Opening Login Page
+2026-06-10 13:15:38 - INFO - Entered Email
+2026-06-10 13:15:38 - INFO - Entered Password
+2026-06-10 13:15:38 - INFO - Clicked Login Button
+2026-06-10 13:15:40 - INFO - Login Passed
+2026-06-10 13:15:40 - INFO - ******** Login Test Finished ********
+2026-06-10 14:17:36 - INFO - ******** Login Test Started ********
+2026-06-10 14:17:36 - INFO - Opening Login Page
+2026-06-10 14:17:37 - INFO - Entered Email
+2026-06-10 14:17:37 - INFO - Entered Password
+2026-06-10 14:17:37 - INFO - Clicked Login Button
+2026-06-10 14:17:38 - INFO - Login Passed
+2026-06-10 14:17:38 - INFO - ******** Login Test Finished ********
+2026-06-10 14:20:25 - INFO - ******** Login Test Started ********
+2026-06-10 14:20:25 - INFO - Opening Login Page
+2026-06-10 14:20:25 - INFO - Entered Email
+2026-06-10 14:20:25 - INFO - Entered Password
+2026-06-10 14:20:25 - INFO - Clicked Login Button
+2026-06-10 14:20:28 - INFO - Login Passed
+2026-06-10 14:20:28 - INFO - ******** Login Test Finished ********

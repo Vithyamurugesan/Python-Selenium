@@ -1,0 +1,7 @@
+[32mINFO    [0m automationLogger:test_login.py:15 ******** Login Test Started ********
+[32mINFO    [0m automationLogger:test_login.py:17 Opening Login Page
+[32mINFO    [0m automationLogger:test_login.py:20 Entered Email
+[32mINFO    [0m automationLogger:test_login.py:22 Entered Password
+[32mINFO    [0m automationLogger:test_login.py:24 Clicked Login Button
+[32mINFO    [0m automationLogger:test_login.py:28 Login Passed
+[32mINFO    [0m automationLogger:test_login.py:33 ******** Login Test Finished ********
