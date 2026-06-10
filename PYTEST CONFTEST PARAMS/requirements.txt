@@ -1,8 +1,0 @@
-pytest
-pytest-xdist
-pytest-html
-selenium
-webdriver-manager
-allure-pytest
-pytest-check
-openpyxl
