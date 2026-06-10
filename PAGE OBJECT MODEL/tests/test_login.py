@@ -6,7 +6,7 @@ from configuration.readProperties import ReadConfig
 from utilities.logCreator import log_generator
 
 
-@pytest.mark.usefixtures("setup")
+@pytest.mark.usefixtures("setup_and_teardown")
 class TestLogin:
     logger = log_generator()
 

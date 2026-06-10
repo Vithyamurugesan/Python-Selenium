@@ -3,7 +3,7 @@ from pages.HomePage import HomePage
 from pages.SearchPage import SearchPage
 from pages.AddtoCartPage import AddToCartPage
 
-@pytest.mark.usefixtures("setup")
+@pytest.mark.usefixtures("setup_and_teardown")
 class TestAddToCart:
 
     @pytest.mark.order(3)

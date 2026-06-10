@@ -2,7 +2,7 @@ import pytest
 from pages.HomePage import HomePage
 from pages.SearchPage import SearchPage
 
-@pytest.mark.usefixtures("setup")
+@pytest.mark.usefixtures("setup_and_teardown")
 class TestSearch:
 
     @pytest.mark.order(2)
